@@ -1,0 +1,71 @@
+
+.login{
+    height: calc(100vh - 15rem);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem;
+
+    &-header{
+        @include Flex;
+        font-size: 3rem;
+        color: #767676;
+    }
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    &-input{
+        width: 80%;
+        align-self: center;
+        padding: 2rem;
+        outline: none;
+        font-size: 1.2rem; 
+        border: 2px solid #e5e5e5;
+        border-radius: 1rem;
+        box-shadow: 4px 4px 6px #e2e2e2,
+                   -4px -4px 6px #fff,
+                   inset 4px 4px 6px #e2e2e2,
+                   inset -4px -4px 6px #fff;
+
+        &::placeholder{
+            font-size: 1.4rem;
+        }
+    }
+
+    &-btn{
+        width: 30%;
+        align-self: center;
+        height: 6rem;
+        outline: none;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background: transparent;
+        border: 2px solid #e5e5e5;
+        border-radius: 1rem;
+        box-shadow: 4px 4px 6px #e2e2e2,
+                   -4px -4px 6px #fff,
+                   inset 4px 4px 6px #e2e2e2,
+                   inset -4px -4px 6px #fff;
+
+    }
+
+    &-links{
+        @include Flex;
+        gap: 3rem;
+
+        p{
+            font-size: 1.6rem;
+            color: #767676;
+        }
+    }
+
+    &-link{
+        color: blue;
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+}

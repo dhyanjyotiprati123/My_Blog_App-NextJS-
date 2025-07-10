@@ -1,0 +1,77 @@
+
+.register{
+    height: calc(100vh - 15rem);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &-header{
+        @include Flex;
+        font-size: 3rem;
+        color: #767676;
+    }
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &-input{
+        padding: 2rem;
+        outline: none;
+        font-size: 1.2rem;
+        width: 80%;
+        align-self: center;
+        background: transparent;
+        border: 2px solid #e5e5e5;
+        border-radius: 5px;
+         box-shadow: 3px 3px 5px #e2e2e2,
+                    -3px -3px 5px #fff,
+                    inset 3px 3px 5px #e2e2e2,
+                    inset -3px -3px 5px #fff;
+
+        &::placeholder{
+            font-size: 1.4rem;
+            color: #767676;
+        }
+    }
+
+    &-btn{
+        text-transform: uppercase;
+        color: #767676;
+        width: 30%;
+        border: none;
+        outline: none;
+        height: 7rem;
+        font-size: 2rem;
+        align-self: center;
+        cursor: pointer;
+        margin-top: 2rem;
+        background: transparent;
+        border-radius: 5px;
+        border: 2px solid #e5e5e5;
+        box-shadow: 3px 3px 5px #e2e2e2,
+                    -3px -3px 5px #fff,
+                    inset 3px 3px 5px #e2e2e2,
+                    inset -3px -3px 5px #fff;
+    }
+
+    &-links{
+        @include Flex;
+        gap: 3rem;
+
+        p{
+            font-size: 1.6rem;
+            color: #767676;
+        }
+    }
+
+     &-link{
+            text-decoration: underline;
+            color: blue;
+            font-size: 1.2rem;
+        }
+    
+}

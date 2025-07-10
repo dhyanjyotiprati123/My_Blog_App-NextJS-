@@ -1,0 +1,70 @@
+
+.usercard{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+     box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+
+    &-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    &-avatar{
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
+    &-person{
+        object-fit: cover;
+         border-radius: 50%;
+    }
+    &-title{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #767676;
+        letter-spacing: 2px;
+    }
+
+    &-details{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p{
+            font-size: 2rem;
+            color: #767676;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+         p{
+            font-size: 2rem;
+            color: #767676;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            span{
+                font-size: 2.5rem;
+                color: rgb(144, 2, 201);
+            }
+        }
+    }
+}

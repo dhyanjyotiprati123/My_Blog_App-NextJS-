@@ -1,0 +1,61 @@
+
+.adminLayout{
+    display: flex;
+    height: calc(100vh - 15rem);
+
+    &-sidebar{
+        flex: 1;
+        border: 3px solid #e5e5e5;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 5px 5px 8px #e2e2e2,
+                    -5px -5px 8px  #fff,
+                    inset 4px 4px 8px #e2e2e2,
+                    inset -4px -4px 8px #fff;
+
+        h2{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #767676;
+            align-self: center;
+            display: flex;
+            gap: 2rem;
+
+            p{
+                padding: 1rem;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                border: 1px solid gray;
+                @include Flex;
+            }
+        }
+    }
+    &-links{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 10rem;
+        padding: 0 2rem;
+    }
+    &-pages{
+        flex: 5;
+        overflow-y: auto;
+    }
+    &-link{
+        display: flex;
+        gap: 2rem;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #4c4b4b;
+        border: 3px solid #e5e5e5;
+        box-shadow: 3px 3px 6px #e2e2e2,
+                    -3px -3px 6px #fff,
+                    inset 3px 3px 6px #e2e2e2,
+                    inset -3px -3px 6px #fff;
+
+    }
+}

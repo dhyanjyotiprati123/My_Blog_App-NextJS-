@@ -1,0 +1,91 @@
+
+.contact{
+    padding: 3rem;
+
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: calc(100vh - 20rem);
+    }
+    
+    &-title{
+        font-size: 3.5rem;
+        align-self: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #767676;
+    }
+
+    &-main{
+        display: flex;
+        gap: 3rem;
+        height: 100%;
+    }
+    &-left{
+        flex: 1;
+        @include Flex;
+    }
+    &-right{
+        flex: 1;
+        position: relative;
+        height: 100%;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &-input{
+        padding: 2rem;
+        min-width: 40rem;
+        outline: none;
+        border-radius: 1rem;
+        border: 1px solid #eee;
+        font-size: 1.5rem;
+        box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+
+        &::placeholder{
+            font-size: 1.5rem;
+        }
+    }
+
+    &-area{
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid #eee;
+        box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+
+        &::placeholder{
+            font-size: 1.5rem;
+        }
+    }
+
+    &-btn{
+        width: 50%;
+        align-self: center;
+        padding: 2rem;
+        border-radius: 5px;
+        border: 2px solid #eee;
+        background: none;
+        outline: none;
+         box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+       font-size: 2rem;
+       color: #767676;     
+       cursor: pointer; 
+    }
+
+    &-img{
+        object-fit: contain;
+    }
+}

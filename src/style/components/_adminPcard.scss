@@ -1,0 +1,66 @@
+
+.adminPcard{
+    display: flex;
+    border: 5px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    border-radius: 7px;
+    box-shadow:  12px 12px 30px #e5e5e5,
+             -12px -12px 30px #ffffff,
+             inset 12px 12px 30px #e2e2e2,
+             inset -12px -12px 30px #ffffff;
+
+    &-left{
+        flex: 1;
+        @include Flex;
+    }
+    &-right{
+        flex: 1;
+        display: flex;
+        gap: 2rem;
+    }
+    &-total{
+        padding: 3rem;
+        border-radius: 5px;
+        background: #eee;
+        h2{
+            display: flex;
+            gap: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #767676;
+        }
+        h3{
+            display: flex;
+            gap: 1.5rem;
+            font-size: 2rem;
+            color: #767676;
+        }
+    }
+    &-recent{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &-title{
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-left: 2rem;
+        }
+    }
+
+    &-visited{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &-title{
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-left: 1rem;
+        }
+    }
+}

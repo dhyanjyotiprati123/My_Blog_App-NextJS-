@@ -1,0 +1,24 @@
+
+.recentVisited{
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 1rem;
+     box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+
+    &-title{
+        font-size: 1.6rem;
+        font-weight: 300;
+
+    }
+    &-desc{
+        font-size: 1.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+         overflow: hidden;
+    }
+}

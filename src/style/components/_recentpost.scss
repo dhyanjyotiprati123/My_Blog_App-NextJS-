@@ -1,0 +1,38 @@
+
+.recentPost{
+    width: 30rem;
+    padding: 2rem;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+     box-shadow:  5px 5px 3px #e5e5e5,
+             -5px -5px 3px #ffffff,
+             inset 5px 5px 3px #e2e2e2,
+             inset -5px -5px 3px #ffffff;
+
+    &-title{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    &-desc{
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+         overflow: hidden;
+    }
+    &-author{
+        font-size: 1.3rem;
+        span{
+            text-decoration: underline;
+            color: rgb(110, 1, 110);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+
+.about{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    &-img{
+        flex: 1;
+        position: relative;
+        height: 50rem;
+    }
+    &-text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    &-title{
+        font-size: 5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        word-spacing: 40px;
+        color: rgb(45, 163, 45);
+    }
+    &-desc{
+        font-size: 2rem;
+        font-weight: 300;
+        color: #767676;
+    }
+    &-about{
+        font-size: 1.5rem;
+    }
+    &-btn{
+        font-size: 2rem;
+        text-transform: uppercase;
+        border: 3px solid #e5e5e5;
+        border-radius: 1rem;
+        padding: 2rem;
+        outline: none;
+        cursor: pointer;
+        width: 30rem;
+        background: none;
+        box-shadow: 5px 5px 8px #e2e2e2,
+                    -5px -5px 8px #fff,
+                    inset 5px 5px 8px #e3e3e3,
+                    inset -5px -5px 8px #fff;
+    }
+}
