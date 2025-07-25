@@ -6,7 +6,7 @@ export async function GET(req, { params }) {
   try {
     await dbConnect();
 
-    const { id } = params;
+    const { id } =await params;
 
     const post = await Post.findById(id).populate('author', 'name')
 

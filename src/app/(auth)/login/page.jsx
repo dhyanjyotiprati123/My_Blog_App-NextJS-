@@ -34,8 +34,9 @@ const page = () => {
 
         const data = await res.json();
 
-          if (!res.ok) {
+      if (!res.ok) {
         setError(data.message || "Something went wrong");
+        alert(setError);
       } else {
         setSuccess("Login Successful");
         setError("");
@@ -45,8 +46,8 @@ const page = () => {
           router.push("/");
         }, 2000);}
      } catch (error) {
-             setError(error.message || "Server error");
-
+         setError(error.message || "Server error");
+         alert(setError)
      }
   }
 
